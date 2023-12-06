@@ -1,3 +1,5 @@
+const pokemonList = document.getElementById("pokemonList");
+const loadMoreButton = document.getElementById("loadMoreButton");
 
 function convertPokemonToLi(pokemon) {
   return `
@@ -7,7 +9,7 @@ function convertPokemonToLi(pokemon) {
 
           <div class="detail">
             <ol class="types">
-                ${pokemon.types.map((type) => `<li class="type">${type}</li>`).join('')}</ol>
+                ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}</ol>
             </ol>
 
             <img
@@ -18,7 +20,6 @@ function convertPokemonToLi(pokemon) {
         </li>`
 }
 
-const pokemonList = document.getElementById("pokemonList");
 
 pokeApi.getPokemons().then((pokemons = []) => {
     const newHtml = pokemons.map(convertPokemonToLi).join('')
