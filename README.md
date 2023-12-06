@@ -23,8 +23,3 @@ Este é um projeto de Pokédex simples, desenvolvido utilizando a PokeAPI. A Pok
 
 - [PokeAPI](https://pokeapi.co/): API utilizada para obter dados sobre Pokémon.
 - [JavaScript Fetch API](https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API): Utilizado para fazer requisições HTTP e obter dados da PokeAPI de forma assíncrona.
-
-
-## Autor
-
-Giancarlo
